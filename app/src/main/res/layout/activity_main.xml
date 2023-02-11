@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/dark_gray"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Enter Player Names"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/dark_cyan"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="18dp"
+            android:src="@drawable/cross_icon"
+            android:adjustViewBounds="true"/>
+
+        <EditText
+            android:id="@+id/edt_player_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:background="@color/dark_cyan"
+            android:layout_marginEnd="20dp"
+            android:hint="Player One"
+            android:maxLines="1"
+            android:inputType="text"
+            android:textColorHint="@color/light_white"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/dark_cyan"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="18dp"
+            android:src="@drawable/ic_zero"
+            android:adjustViewBounds="true"/>
+
+        <EditText
+            android:id="@+id/edt_player_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:background="@color/dark_cyan"
+            android:layout_marginEnd="20dp"
+            android:hint="Player Two"
+            android:maxLines="1"
+            android:inputType="text"
+            android:textColorHint="@color/light_white"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="36dp"
+        android:textColor="@color/white"
+        android:text="Start Game"
+        android:background="@drawable/round_button_shape"/>
+
+</LinearLayout>
